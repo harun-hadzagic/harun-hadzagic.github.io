@@ -29,7 +29,6 @@ function handleSymbol(symbol) {
             buffer=runningTotal;
             runningTotal = 0;
             break;
-        case `+`:
         case `←`:
             if (buffer.length===1){
                 buffer = `0`
@@ -37,6 +36,7 @@ function handleSymbol(symbol) {
                 buffer=buffer.substring(0, buffer.length - 1);
             }
         break;
+        case `+`:
         case `-`:
         case `×`:
         case `÷`:
