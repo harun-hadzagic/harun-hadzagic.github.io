@@ -1,0 +1,67 @@
+body{
+    margin: auto;
+    width: 400px;
+    margin-top: 5rem;
+    font-size: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.result{
+    background-color: black;
+    color: white;
+    height: auto;
+    text-align: right;
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+    padding: 25px 0.5rem;
+    font-weight: bold;
+    font-size: xx-large;
+}
+.cbutton{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 100px;
+    background-color: #d8d9db;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.standardbuttongray{
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #d8d9db;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.standardbuttonorange{
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #df974c;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+.zerobutton{
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: 100px;
+    background-color: #d8d9db;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.cbutton:hover , .standardbuttongray:hover, .zerobutton:hover {
+    background-color: #ebebeb;
+}
+.standardbuttonorange:hover{
+    background-color: #dfb07e;
+}
+.cbutton:active, .standardbuttongray:active, .zerobutton:active{
+    background-color: #bbbcbe;
+}
+.standardbuttonorange:active {
+    background-color: #dd8d37;
+}
