@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harun Hadžagić</title>
+    <link rel="stylesheet" href="website2.0.css">
+</head>
+<body>
+<div class="context">
+        <div id="fixed">
+        <!-- <nav class="navbar">
+            <ul>
+                <li class="navbackground"><a  href="html/aboutme.html"> About Me</a></li>
+                <li class="navbackground"><a href="html/myprojects.html"> My Projects</a></li>
+                <li class="navbackground"><a href="html/hobbies.html"> Hobbies</a></li> 
+            </ul>
+        </nav> -->
+        <div class="container red topBotomBordersOut">
+            <a id="home">HOME</a>
+            <a id="articles">ABOUT ME</a>
+            <a id="projects">PROJECTS</a>
+            <a id="hobbies">HOBBIES</a>
+            <a id="contact_me">CONTACT</a>
+          </div>
+    </div>
+    <div id="body">
+        <img src="img/harun.jpg" alt="HarunHadžagić" title="HarunHadzagic" class="image"><br>
+        <p class="welcome">Hi, I am</p><br>
+        <h2 class="namesurname">Harun Hadžagić, junior developer</h2><br>
+        <p class="welcome">I live in Sarajevo and have a bachelor in financial management and I am on track to graduate my MBA by the end of 2023. I discovered myself in coding and look forward to any project that can challenge me!</p><br>
+        <ul class="contact">
+            <li><a href="https://www.linkedin.com/in/harun-h-437807136/" target="_blank"><img src="img/linkedin.png" alt="mylinkedin" title="Visit Harun's LinkedIn" width="120rem" height="120rem"></li>
+            <li><a href="https://www.instagram.com/harun.hadzagic/" target="_blank"><img src="img/ig.png" alt="myinstagram" title="Visite Harun's Instagram" width="120rem" height="120rem"></li>
+            <li><a href="https://github.com/harun-hadzagic" target="_blank"><img src="img/github.png" alt="mygithub" title="Visite Harun's GitHub" width="120rem" height="120rem"></li>
+            <!-- <li><a href="mailto:harun.hadzagic@gmail.com?Subject=Hello,%20I%20got%20your%20email%20from%20your%20portofolio%20and%20would%20like%20to%20contact%20you" target="_top"><img src="img/gmail.png" alt="gmail" title="Send Harun an Email" width="75rem" height="60rem"></li> -->
+        </ul><br>
+    </div>
+</div>
+
+
+
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div >
+    <script>
+        // Home
+        async function home() {      
+    let response = await fetch('./html/home.html'); 
+    document.getElementById(`body`).innerHTML = await response.text(); 
+}
+let homeButton = document.getElementById(`home`);
+homeButton.addEventListener(`click`, home);
+
+        // About me 
+        async function fetchAboutMe() {      
+    let response = await fetch('./html/aboutme.html'); 
+    document.getElementById(`body`).innerHTML = await response.text(); 
+}
+let aboutMeButton = document.getElementById(`articles`);
+aboutMeButton.addEventListener(`click`, fetchAboutMe);
+
+    // Projects
+    async function projects() {      
+    let response = await fetch('./html/myprojects.html'); 
+    document.getElementById(`body`).innerHTML = await response.text(); 
+}
+let myProjectsButton = document.getElementById(`projects`);
+myProjectsButton.addEventListener(`click`, projects);
+
+    // Hobbies
+    async function hobbies() {      
+    let response = await fetch('./html/hobbies.html'); 
+    document.getElementById(`body`).innerHTML = await response.text(); 
+}
+let myHobbiesButton = document.getElementById(`hobbies`);
+myHobbiesButton.addEventListener(`click`, hobbies);
+
+    // Hobbies
+    async function contactMe() {      
+    let response = await fetch('./html/contactme.html'); 
+    document.getElementById(`body`).innerHTML = await response.text(); 
+}
+let contactMeButton = document.getElementById(`contact_me`);
+contactMeButton.addEventListener(`click`, contactMe);
+    </script>
+</body>
+</html>
