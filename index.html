@@ -52,41 +52,41 @@
         // Home
         async function home() {      
     let response = await fetch('./html/home.html'); 
-    document.getElementById(`body`).innerHTML = await response.text(); 
+    document.getElementByid(`body`).innerHTML = await response.text(); 
 }
-let homeButton = document.getElementById(`home`);
+let homeButton = document.getElementByid(`home`);
 homeButton.addEventListener(`click`, home);
 
         // About me 
         async function fetchAboutMe() {      
     let response = await fetch('./html/aboutme.html'); 
-    document.getElementById(`body`).innerHTML = await response.text(); 
+    document.getElementByid(`body`).innerHTML = await response.text(); 
 }
-let aboutMeButton = document.getElementById(`articles`);
+let aboutMeButton = document.getElementByid(`articles`);
 aboutMeButton.addEventListener(`click`, fetchAboutMe);
 
     // Projects
     async function projects() {      
     let response = await fetch('./html/myprojects.html'); 
-    document.getElementById(`body`).innerHTML = await response.text(); 
+    document.getElementByid(`body`).innerHTML = await response.text(); 
 }
-let myProjectsButton = document.getElementById(`projects`);
+let myProjectsButton = document.getElementByid(`projects`);
 myProjectsButton.addEventListener(`click`, projects);
 
     // Hobbies
     async function hobbies() {      
     let response = await fetch('./html/hobbies.html'); 
-    document.getElementById(`body`).innerHTML = await response.text(); 
+    document.getElementByid(`body`).innerHTML = await response.text(); 
 }
-let myHobbiesButton = document.getElementById(`hobbies`);
+let myHobbiesButton = document.getElementByid(`hobbies`);
 myHobbiesButton.addEventListener(`click`, hobbies);
 
     // Hobbies
     async function contactMe() {      
     let response = await fetch('./html/contactme.html'); 
-    document.getElementById(`body`).innerHTML = await response.text(); 
+    document.getElementByid(`body`).innerHTML = await response.text(); 
 }
-let contactMeButton = document.getElementById(`contact_me`);
+let contactMeButton = document.getElementByid(`contact_me`);
 contactMeButton.addEventListener(`click`, contactMe);
     </script>
 </body>

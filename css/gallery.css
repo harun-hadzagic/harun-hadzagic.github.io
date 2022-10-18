@@ -1,47 +1,46 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 .gallery-img {
-    display: none;
-    max-height: 600px;
-    max-width: 300px;
+  display: none;
+  max-height: 600px;
+  max-width: 300px;
 }
 
 .active {
-    display: block;
+  display: block;
 }
 .image-gellery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .btn {
-    background-color: #0074d9;
-    color: white;
-    font-size: 20px;
-    padding: 5px 20px;
-    border-color: transparent;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #0074d9;
+  color: white;
+  font-size: 20px;
+  padding: 5px 20px;
+  border-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
 }
 .buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .prev {
-    margin-right: 15px;
-
+  margin-right: 15px;
 }
 
 .btn:disabled {
-    background-color: #777;
-    cursor: not-allowed;
+  background-color: #777;
+  cursor: not-allowed;
 }
 .swiper-slide {
-    text-align: center;
-    cursor: grab;
+  text-align: center;
+  cursor: grab;
 }
 img {
-    height: 600px;
+  height: 600px;
 }

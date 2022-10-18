@@ -1,6 +1,6 @@
-const main = document.getElementById("main");
-const loader = document.getElementById("loader");
-const breedSelect = document.getElementById("breed");
+const main = document.getElementByid("main");
+const loader = document.getElementByid("loader");
+const breedSelect = document.getElementByid("breed");
 
 async function init() {
   // populate breed list
@@ -26,7 +26,7 @@ async function init() {
   // add event listeners
   breedSelect.addEventListener("change", handleBreedChange);
 
-  main.addEventListener("load", function() {
+  main.addEventListener("load", function () {
     main.classList.add("show");
     loader.classList.remove("show");
   });
